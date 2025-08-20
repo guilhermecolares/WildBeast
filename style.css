@@ -15,9 +15,7 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 8rem;
-}
+img {max-width: 100%;}
 
 .estrutura {
     display: grid;
@@ -31,6 +29,35 @@ img {
 
 .main-header {
     grid-area: header;
+    background: linear-gradient(135deg, #8844ee, #B07DFB);
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.main-header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+}
+
+.main-header nav a {
+    display: block;
+    padding: 0.625rem;
+    color: white;
+    font-size: 1.125rem;
+    background: rgba(0, 0, 0, .1);
+    border-radius: 0.3125rem;
+    transition: 0.1s;
+}
+
+.main-header nav a:hover {
+    background: rgba(0, 0, 0, .5);
+}
+
+.logo {
+    max-width: 12.5rem;
 }
 
 .sidenav {
