@@ -87,6 +87,25 @@ img {
 
 .content {
     grid-area: content;
+    max-width: 56.25rem;
+    margin: 0 auto;
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.875rem;
+}
+
+.wide-content {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+    grid-row: 3 / span 2;
+    align-self: flex-end;
+}
+
+.imagem-2 {
+    align-self: flex-end;
 }
 
 .ads {
