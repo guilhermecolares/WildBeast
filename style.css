@@ -62,6 +62,24 @@ img {max-width: 100%;}
 
 .sidenav {
     grid-area: sidenav;
+    background: #fafbfc;
+    padding: 1.125rem;
+}
+
+.sidenav li a {
+    display: block;
+    min-width: 3.75rem;
+    max-width: 6.25rem;
+    margin: 0 auto 1.125rem auto;
+    background: white;
+    padding: 1.25rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem 0rem rgba(44, 44, 44, 0.15);
+    transition: 0.1s ease-out;
+}
+
+.sidenav li a:hover {
+    background: #B07DFB;
 }
 
 .content {
