@@ -17,6 +17,8 @@ a {
 
 img {
     max-width: 100%;
+    width: 100%;
+    border-radius: 0.3125rem;
     display: block;
 }
 
@@ -126,7 +128,7 @@ p {
 .title h1 {
     font-size: 3.75em;
     line-height: 1;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .title span {
@@ -171,6 +173,40 @@ p {
     padding: 0.3125rem 0;
     position: relative;
     top: 2px;
+}
+
+.destaque {
+    font-size: 0,875rem;
+    color: #B07DFB;
+    max-width: 16em;
+}
+
+.cite, .atributes {
+    align-self: start;
+    padding: 1.875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0.3125rem 0.3125rem 0.9375rem 0rem rgba(44, 44, 44, 0.15);
+    background: linear-gradient(135deg, #8844ee, #B07DFB);
+}
+
+.cite p {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    color: white;
+    max-width: 31.25rem;
+    margin: 0 auto;
+}
+
+.atributes li {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.125rem;
+    padding: 0.9375rem;
+}
+
+.atributes li + li {
+    border-top: 0.125rem solid #B07DFB;
 }
 
 
