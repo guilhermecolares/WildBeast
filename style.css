@@ -85,6 +85,24 @@ img {
     background: rgba(0, 0, 0, .5);
 }
 
+@media (max-width: 760px) {
+    .main-header {
+        grid-template-columns: auto;
+    }
+
+    .logo {
+        margin-bottom: 1.25rem;
+    }
+
+    .main-header nav a {
+        font-size: 1rem;
+    }
+    
+    .main-header nav ul {
+        gap: 0.625rem;
+    }
+}
+
 .logo {
     max-width: 12.5rem;
 }
@@ -111,6 +129,45 @@ img {
     background: #B07DFB;
 }
 
+@keyframes arrow {
+    from {
+        right: 1.875rem;
+    }
+    to {
+        right: 1.25rem;
+    }
+}
+
+@media (max-width: 760px) {
+    .sidenav {
+        padding: 0 1.875rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        position: relative;
+    }
+
+    .sidenav::after {
+        content: '\2192';
+        position: absolute;
+        top: 0.3125rem;
+        right: 1.875rem;
+        color: rgba(0, 0, 0, .3);
+        animation: arrow .5s ease-in 0s infinite alternate;
+    }
+
+    .sidenav ul {
+        display: flex;
+    }
+
+    .sidenav li {
+        flex: 1 0 3.75rem;
+    }
+
+    .sidenav li a {
+        margin: 1.875rem 1.875rem 1.875rem 0;
+    }
+}
+
 .content {
     grid-area: content;
     max-width: 56.25rem;
@@ -119,6 +176,12 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.875rem;
+}
+
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
 }
 
 .wide-content {
@@ -196,7 +259,7 @@ p {
     border-radius: 0 0 0.3125rem 0.3125rem;
     padding: 0.3125rem 0;
     position: relative;
-    top: 2px;
+    top: 0.125rem;
 }
 
 .destaque {
@@ -241,6 +304,7 @@ p {
     align-content: flex-start;
     padding: 1.875rem;
     grid-gap: 1.875rem;
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
 }
 
 .footer {
